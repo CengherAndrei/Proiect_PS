@@ -1,0 +1,5 @@
+com.example.accessingdatamysql
+com.example.accessingdatamysql.Controller
+com.example.accessingdatamysql.Model
+com.example.accessingdatamysql.Repository
+com.example.accessingdatamysql.Service

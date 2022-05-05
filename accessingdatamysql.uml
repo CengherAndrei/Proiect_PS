@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.example.accessingdatamysql</OriginalElement>
+  <nodes>
+    <node x="693.9702380952381" y="1032.0">com.example.accessingdatamysql.Service.ActServiceImpl</node>
+    <node x="648.2202380952381" y="906.5">com.example.accessingdatamysql.Repository.ActRepository</node>
+    <node x="692.3125" y="480.0">com.example.accessingdatamysql.Model.ProprietarFactory</node>
+    <node x="997.3125" y="503.5">com.example.accessingdatamysql.Repository.ProprietarAdminRepository</node>
+    <node x="247.51190476190476" y="624.0">com.example.accessingdatamysql.Model.Masina</node>
+    <node x="0.0" y="458.0">com.example.accessingdatamysql.Service.ProprietarServiceImpl</node>
+    <node x="995.3125" y="244.0">com.example.accessingdatamysql.Model.ProprietarAdmin</node>
+    <node x="846.827380952381" y="624.0">com.example.accessingdatamysql.Model.Act</node>
+    <node x="40.2202380952381" y="1053.0">com.example.accessingdatamysql.Service.MasinaServiceImpl</node>
+    <node x="264.08333333333337" y="882.0">com.example.accessingdatamysql.Service.MasinaService</node>
+    <node x="1265.3125" y="503.5">com.example.accessingdatamysql.Repository.ProprietarPremiumRepository</node>
+    <node x="313.99999999999994" y="458.0">com.example.accessingdatamysql.Controller.ProprietarController</node>
+    <node x="652.3125" y="0.0">com.example.accessingdatamysql.Model.Proprietar</node>
+    <node x="1463.3125" y="311.0">com.example.accessingdatamysql.Repository.ProprietarRepository</node>
+    <node x="1259.3125" y="244.0">com.example.accessingdatamysql.Model.ProprietarPremium</node>
+    <node x="606.287037037037" y="244.0">com.example.accessingdatamysql.Model.ProprietarBasic</node>
+    <node x="284.2202380952381" y="1053.0">com.example.accessingdatamysql.Controller.MasinaController</node>
+    <node x="889.0952380952381" y="1032.0">com.example.accessingdatamysql.Controller.ActController</node>
+    <node x="0.0" y="927.5">com.example.accessingdatamysql.Repository.MasinaRepository</node>
+    <node x="890.9702380952381" y="861.0">com.example.accessingdatamysql.Service.ActService</node>
+    <node x="260.6662037037036" y="265.5">com.example.accessingdatamysql.Service.ProprietarService</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.example.accessingdatamysql.Service.ActService" target="com.example.accessingdatamysql.Model.Act">
+      <point x="0.0" y="-60.5" />
+      <point x="977.9702380952381" y="841.0" />
+      <point x="946.202380952381" y="841.0" />
+      <point x="19.875" y="93.5" />
+    </edge>
+    <edge source="com.example.accessingdatamysql.Model.ProprietarBasic" target="com.example.accessingdatamysql.Model.Proprietar">
+      <point x="0.0" y="-82.0" />
+      <point x="690.287037037037" y="224.0" />
+      <point x="716.3125" y="224.0" />
+      <point x="0.0" y="82.0" />
+    </edge>
+    <edge source="com.example.accessingdatamysql.Controller.ProprietarController" target="com.example.accessingdatamysql.Service.ProprietarService">
+      <point x="-119.0" y="-60.5" />
+      <point x="373.49999999999994" y="438.0" />
+      <point x="407.6662037037036" y="438.0" />
+      <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="com.example.accessingdatamysql.Service.ProprietarServiceImpl" target="com.example.accessingdatamysql.Service.ProprietarService">
+      <point x="98.0" y="-60.5" />
+      <point x="245.0" y="438.0" />
+      <point x="309.6662037037036" y="438.0" />
+      <point x="-98.0" y="60.5" />
+    </edge>
+    <edge source="com.example.accessingdatamysql.Repository.ProprietarPremiumRepository" target="com.example.accessingdatamysql.Model.ProprietarPremium">
+      <point x="0.0" y="-15.0" />
+      <point x="46.0" y="82.0" />
+    </edge>
+    <edge source="com.example.accessingdatamysql.Controller.ActController" target="com.example.accessingdatamysql.Service.ActService">
+      <point x="-95.0" y="-60.5" />
+      <point x="936.5952380952381" y="1007.0" />
+      <point x="977.9702380952381" y="1007.0" />
+      <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="com.example.accessingdatamysql.Repository.MasinaRepository" target="com.example.accessingdatamysql.Model.Masina">
+      <point x="0.0" y="-15.0" />
+      <point x="88.0" y="852.0" />
+      <point x="263.88690476190476" y="852.0" />
+      <point x="-49.125" y="104.0" />
+    </edge>
+    <edge source="com.example.accessingdatamysql.Repository.ActRepository" target="com.example.accessingdatamysql.Model.Act">
+      <point x="0.0" y="-15.0" />
+      <point x="724.2202380952381" y="831.0" />
+      <point x="866.702380952381" y="831.0" />
+      <point x="-59.625" y="93.5" />
+    </edge>
+    <edge source="com.example.accessingdatamysql.Model.ProprietarPremium" target="com.example.accessingdatamysql.Model.Proprietar">
+      <point x="0.0" y="-82.0" />
+      <point x="1351.3125" y="204.0" />
+      <point x="758.9791666666667" y="204.0" />
+      <point x="42.66666666666674" y="82.0" />
+    </edge>
+    <edge source="com.example.accessingdatamysql.Service.ProprietarService" target="com.example.accessingdatamysql.Model.Proprietar">
+      <point x="0.0" y="-60.5" />
+      <point x="407.6662037037036" y="204.0" />
+      <point x="687.8680555555554" y="204.0" />
+      <point x="-28.444444444444457" y="82.0" />
+    </edge>
+    <edge source="com.example.accessingdatamysql.Model.ProprietarAdmin" target="com.example.accessingdatamysql.Model.Proprietar">
+      <point x="0.0" y="-82.0" />
+      <point x="1079.3125" y="214.0" />
+      <point x="744.7569444444443" y="214.0" />
+      <point x="28.444444444444457" y="82.0" />
+    </edge>
+    <edge source="com.example.accessingdatamysql.Service.ProprietarServiceImpl" target="com.example.accessingdatamysql.Model.Proprietar">
+      <point x="0.0" y="-60.5" />
+      <point x="147.0" y="438.0" />
+      <point x="113.37129629629635" y="438.0" />
+      <point x="113.37129629629635" y="194.0" />
+      <point x="673.6458333333333" y="194.0" />
+      <point x="-42.66666666666663" y="82.0" />
+    </edge>
+    <edge source="com.example.accessingdatamysql.Service.ActServiceImpl" target="com.example.accessingdatamysql.Model.Act">
+      <point x="21.75" y="-60.5" />
+      <point x="802.7202380952381" y="1007.0" />
+      <point x="810.7202380952381" y="1007.0" />
+      <point x="810.7202380952381" y="841.0" />
+      <point x="906.452380952381" y="841.0" />
+      <point x="-19.875" y="93.5" />
+    </edge>
+    <edge source="com.example.accessingdatamysql.Model.ProprietarFactory" target="com.example.accessingdatamysql.Model.ProprietarPremium">
+      <point x="106.875" y="-38.5" />
+      <point x="941.6875" y="438.0" />
+      <point x="1305.3125" y="438.0" />
+      <point x="-46.0" y="82.0" />
+    </edge>
+    <edge source="com.example.accessingdatamysql.Controller.MasinaController" target="com.example.accessingdatamysql.Model.Masina">
+      <point x="106.33333333333334" y="-60.5" />
+      <point x="550.0535714285714" y="1028.0" />
+      <point x="498.58333333333337" y="1028.0" />
+      <point x="498.58333333333337" y="852.0" />
+      <point x="362.13690476190476" y="852.0" />
+      <point x="49.125" y="104.0" />
+    </edge>
+    <edge source="com.example.accessingdatamysql.Repository.ProprietarAdminRepository" target="com.example.accessingdatamysql.Model.ProprietarAdmin">
+      <point x="0.0" y="-15.0" />
+      <point x="42.0" y="82.0" />
+    </edge>
+    <edge source="com.example.accessingdatamysql.Service.ActServiceImpl" target="com.example.accessingdatamysql.Repository.ActRepository">
+      <point x="-65.25" y="-60.5" />
+      <point x="715.7202380952381" y="1007.0" />
+      <point x="686.2202380952381" y="1007.0" />
+      <point x="-38.0" y="15.0" />
+    </edge>
+    <edge source="com.example.accessingdatamysql.Model.ProprietarFactory" target="com.example.accessingdatamysql.Model.ProprietarBasic">
+      <point x="-106.875" y="-38.5" />
+      <point x="727.9375" y="438.0" />
+      <point x="690.287037037037" y="438.0" />
+      <point x="0.0" y="82.0" />
+    </edge>
+    <edge source="com.example.accessingdatamysql.Service.MasinaServiceImpl" target="com.example.accessingdatamysql.Service.MasinaService">
+      <point x="84.0" y="-60.5" />
+      <point x="236.2202380952381" y="1028.0" />
+      <point x="301.41666666666663" y="1028.0" />
+      <point x="-74.66666666666669" y="60.5" />
+    </edge>
+    <edge source="com.example.accessingdatamysql.Controller.MasinaController" target="com.example.accessingdatamysql.Service.MasinaService">
+      <point x="-106.33333333333331" y="-60.5" />
+      <point x="337.3869047619048" y="1028.0" />
+      <point x="376.08333333333337" y="1028.0" />
+      <point x="0.0" y="60.5" />
+    </edge>
+    <edge source="com.example.accessingdatamysql.Service.ActServiceImpl" target="com.example.accessingdatamysql.Service.ActService">
+      <point x="65.25" y="-60.5" />
+      <point x="846.2202380952381" y="1007.0" />
+      <point x="919.9702380952381" y="1007.0" />
+      <point x="-58.0" y="60.5" />
+    </edge>
+    <edge source="com.example.accessingdatamysql.Service.MasinaServiceImpl" target="com.example.accessingdatamysql.Repository.MasinaRepository">
+      <point x="-84.0" y="-60.5" />
+      <point x="68.2202380952381" y="1028.0" />
+      <point x="44.0" y="1028.0" />
+      <point x="-44.0" y="15.0" />
+    </edge>
+    <edge source="com.example.accessingdatamysql.Repository.ProprietarRepository" target="com.example.accessingdatamysql.Model.Proprietar">
+      <point x="0.0" y="-15.0" />
+      <point x="1567.3125" y="194.0" />
+      <point x="773.2013888888889" y="194.0" />
+      <point x="56.888888888888914" y="82.0" />
+    </edge>
+    <edge source="com.example.accessingdatamysql.Controller.ProprietarController" target="com.example.accessingdatamysql.Model.Proprietar">
+      <point x="119.0" y="-60.5" />
+      <point x="611.5" y="438.0" />
+      <point x="570.4749999999999" y="438.0" />
+      <point x="570.4749999999999" y="214.0" />
+      <point x="702.0902777777778" y="214.0" />
+      <point x="-14.222222222222172" y="82.0" />
+    </edge>
+    <edge source="com.example.accessingdatamysql.Controller.ActController" target="com.example.accessingdatamysql.Model.Act">
+      <point x="95.0" y="-60.5" />
+      <point x="1126.595238095238" y="1007.0" />
+      <point x="1075.470238095238" y="1007.0" />
+      <point x="1075.470238095238" y="841.0" />
+      <point x="985.952380952381" y="841.0" />
+      <point x="59.625" y="93.5" />
+    </edge>
+    <edge source="com.example.accessingdatamysql.Service.MasinaService" target="com.example.accessingdatamysql.Model.Masina">
+      <point x="0.0" y="-60.5" />
+      <point x="376.08333333333337" y="862.0" />
+      <point x="329.38690476190476" y="862.0" />
+      <point x="16.375" y="104.0" />
+    </edge>
+    <edge source="com.example.accessingdatamysql.Model.ProprietarFactory" target="com.example.accessingdatamysql.Model.Proprietar">
+      <point x="-35.625" y="-38.5" />
+      <point x="799.1875" y="438.0" />
+      <point x="810.8125" y="438.0" />
+      <point x="810.8125" y="224.0" />
+      <point x="730.5347222222222" y="224.0" />
+      <point x="14.222222222222172" y="82.0" />
+    </edge>
+    <edge source="com.example.accessingdatamysql.Service.MasinaServiceImpl" target="com.example.accessingdatamysql.Model.Masina">
+      <point x="28.0" y="-60.5" />
+      <point x="180.2202380952381" y="1028.0" />
+      <point x="186.50000000000003" y="1028.0" />
+      <point x="186.50000000000003" y="862.0" />
+      <point x="296.63690476190476" y="862.0" />
+      <point x="-16.375" y="104.0" />
+    </edge>
+    <edge source="com.example.accessingdatamysql.Model.ProprietarFactory" target="com.example.accessingdatamysql.Model.ProprietarAdmin">
+      <point x="35.625" y="-38.5" />
+      <point x="870.4375" y="428.0" />
+      <point x="1037.3125" y="428.0" />
+      <point x="-42.0" y="82.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.5192629815745393" x="836.0" y="587.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

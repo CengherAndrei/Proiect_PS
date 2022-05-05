@@ -1,5 +1,6 @@
 package com.example.accessingdatamysql.Service;
 
+import com.example.accessingdatamysql.Model.EnumProprietari;
 import com.example.accessingdatamysql.Model.Proprietar;
 
 import java.util.List;
@@ -20,10 +21,10 @@ public interface ProprietarService {
      * @param idProprietar
      * @return Iterable<Proprietar>
      */
-    Iterable<Proprietar> deleteProprietar(Integer idProprietar);
+    void deleteProprietar(Integer idProprietar);
     /**
      * @param idProprietar
      * @return Proprietar
      */
-    Proprietar getProprietarByID(Integer idProprietar);
+    Proprietar getProprietarByID(Integer idProprietar, EnumProprietari tip);
 }

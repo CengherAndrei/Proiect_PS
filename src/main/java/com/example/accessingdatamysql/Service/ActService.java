@@ -21,7 +21,7 @@ public interface ActService {
      * @param id_act
      * @return Iterable<Act>
      */
-    Iterable<Act> deleteAct(Integer id_act);
+    void deleteAct(Integer id_act);
     /**
      * @param id_act
      * @return Act

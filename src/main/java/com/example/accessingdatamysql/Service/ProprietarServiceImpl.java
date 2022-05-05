@@ -1,7 +1,8 @@
 package com.example.accessingdatamysql.Service;
 
-import com.example.accessingdatamysql.Model.Proprietar;
+import com.example.accessingdatamysql.Model.*;
 import com.example.accessingdatamysql.Repository.ProprietarRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -10,24 +11,41 @@ import java.util.List;
  * Implementarea interfetei ProprietarService
  */
 @Service
-public class ProprietarServiceImpl implements ProprietarService {
 
-    com.example.accessingdatamysql.Repository.ProprietarRepository ProprietarRepository;
-    /**
-     * @param ProprietarRepository
-     */
-    public ProprietarServiceImpl(ProprietarRepository ProprietarRepository)
-    {
-        this.ProprietarRepository = ProprietarRepository;
-    }
-    /**
-     * @param proprietar
-     * @return Proprietar
-     */
+public class ProprietarServiceImpl implements ProprietarService {
+    @Autowired
+    ProprietarRepository ProprietarRepository;
+
+    //ProprietarRepoDate proprietarRepoDate;
+    //ReadData rd = new ReadData();
+    //List<Proprietar> proprietars;
+
+//    public ProprietarServiceImpl(ProprietarRepository ProprietarRepository)
+//    {
+//        this.ProprietarRepository = ProprietarRepository;
+//    }
+
+//    public ProprietarServiceImpl()
+//    {
+//        proprietars = rd.readFromFile();
+//    }
+//    /**
+//     * @param proprietar
+//     * @return Proprietar
+//     */
     public Proprietar addNewProprietar (Proprietar proprietar) {
         return ProprietarRepository.save(proprietar);
+//        return ProprietarRepository.save(proprietar);
+//        proprietars.add(proprietar);
+//        try {
+//            rd.writeDataInFile(proprietar);
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//            return null;
+//        }
+//        return proprietar;
+//    }
     }
-
     /**
      * @return List<Proprietar>
      */
@@ -41,7 +59,7 @@ public class ProprietarServiceImpl implements ProprietarService {
      * @param idProprietar
      * @return Proprietar
      */
-    public Proprietar getProprietarByID(Integer idProprietar) {
+    public Proprietar getProprietarByID(Integer idProprietar, EnumProprietari tip) {
         return ProprietarRepository.findById(idProprietar).get();
     }
 
@@ -49,11 +67,22 @@ public class ProprietarServiceImpl implements ProprietarService {
      * @param idProprietar
      * @return Iterable<Proprietar>
      */
-    public Iterable<Proprietar> deleteProprietar(Integer idProprietar) {
-        // This returns a JSON or XML with the users
-        Proprietar pr = ProprietarRepository.findById(idProprietar).orElseThrow();
-        ProprietarRepository.delete(pr);
-        System.out.println("Deleted");
-        return ProprietarRepository.findAll();
+    public void deleteProprietar(Integer idProprietar) {
+
+        ProprietarRepository.deleteById(idProprietar);
+//        for(Proprietar pr:proprietars)
+//        {
+//            if(pr.getIdProprietar().equals(idProprietar))
+//            {
+//                proprietars.remove(pr);
+//                try {
+//                    rd.deleteProprietarInFile(pr);
+//                } catch (IOException e) {
+//                    e.printStackTrace();
+//                }
+//                break;
+//            }
+//        }
+//        return proprietars;
     }
 }

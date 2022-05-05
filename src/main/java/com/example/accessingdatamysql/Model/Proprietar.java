@@ -1,9 +1,11 @@
 package com.example.accessingdatamysql.Model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import org.hibernate.annotations.DynamicUpdate;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Clasa pentru modelul Proprietar din baza de date
@@ -12,13 +14,15 @@ import javax.persistence.Id;
 public class Proprietar {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-    Integer idProprietar;
+    Integer idProprietar=0;
     String nume;
     String CNP;
     String adresa;
     String nrTelefon;
     String email;
-
+    int tip;
+    @OneToMany
+    private List<Masina> masini=new ArrayList<>();
     public Proprietar() {
 
     }
@@ -46,7 +50,7 @@ public class Proprietar {
      * @param idProprietar
      */
     public void setIdProprietar(int idProprietar) {
-        this.idProprietar = idProprietar;
+        idProprietar = idProprietar;
     }
     /**
      * @return String
@@ -107,5 +111,19 @@ public class Proprietar {
      */
     public void setEmail(String email) {
         this.email = email;
+    }
+    public List<Masina> getMasini() {
+        return masini;
+    }
+
+    public void setMasini(List<Masina> masini) {
+        this.masini = masini;
+    }
+    public int getTip() {
+        return tip;
+    }
+
+    public void setTip(int tip) {
+        this.tip = tip;
     }
 }

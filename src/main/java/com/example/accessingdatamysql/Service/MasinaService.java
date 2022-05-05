@@ -21,7 +21,7 @@ public interface MasinaService {
      * @param serie
      * @return Iterable<Masina>
      */
-    Iterable<Masina> deleteMasina(String serie);
+    void deleteMasina(String serie);
     /**
      * @param serie
      * @return Masina

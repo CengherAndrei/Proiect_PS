@@ -14,9 +14,10 @@ public class Act {
     int idAct;
     String tipAct;
     String serie;
-    Date valabil_de_la;
-    Date valabil_pana_la;
+    String valabil_de_la;
+    String valabil_pana_la;
     double pret;
+
     /**
      * @param idAct
      * @param SERIE
@@ -25,7 +26,7 @@ public class Act {
      * @param tipAct
      * @param pret
      */
-    public Act(int idAct, String tipAct, String SERIE, Date valabil_de_la, Date valabil_pana_la, double pret) {
+    public Act(int idAct, String tipAct, String SERIE, String valabil_de_la, String valabil_pana_la, double pret) {
         this.idAct = idAct;
         this.tipAct = tipAct;
         this.serie = SERIE;
@@ -33,9 +34,11 @@ public class Act {
         this.valabil_pana_la = valabil_pana_la;
         this.pret = pret;
     }
+
     public Act() {
 
     }
+
     /**
      * @return Int
      */
@@ -72,25 +75,25 @@ public class Act {
     /**
      * @return Date
      */
-    public Date getValabil_de_la() {
+    public String getValabil_de_la() {
         return valabil_de_la;
     }
     /**
      * @param valabil_de_la
      */
-    public void setValabil_de_la(Date valabil_de_la) {
+    public void setValabil_de_la(String valabil_de_la) {
         this.valabil_de_la = valabil_de_la;
     }
     /**
      * @return Date
      */
-    public Date getValabil_pana_la() {
+    public String getValabil_pana_la() {
         return valabil_pana_la;
     }
     /**
      * @param valabil_pana_la
      */
-    public void setValabil_pana_la(Date valabil_pana_la) {
+    public void setValabil_pana_la(String valabil_pana_la) {
         this.valabil_pana_la = valabil_pana_la;
     }
     /**

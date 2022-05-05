@@ -2,6 +2,10 @@ package com.example.accessingdatamysql.Model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Clasa pentru modelul Masina din baza de date
  */
@@ -16,13 +20,15 @@ public class Masina {
     String culoare;
     int motor;
     String combustibil;
+    @OneToMany
+    private List<Act> acte=new ArrayList<>();
 
     public Masina() {
 
     }
     /**
      * @param idProprietar
-     * @param SERIE
+     * @param serie
      * @param marca
      * @param model
      * @param an_fabricatie
@@ -30,8 +36,8 @@ public class Masina {
      * @param motor
      * @param combustibil
      */
-    public Masina(String SERIE, int idProprietar, String marca, String model, int an_fabricatie, String culoare, int motor, String combustibil) {
-        this.serie = SERIE;
+    public Masina(String serie, int idProprietar, String marca, String model, int an_fabricatie, String culoare, int motor, String combustibil) {
+        this.serie = serie;
         this.idProprietar = idProprietar;
         this.marca = marca;
         this.model = model;
@@ -43,14 +49,14 @@ public class Masina {
     /**
      * @return String
      */
-    public String getSERIE() {
+    public String getSerie() {
         return serie;
     }
     /**
-     * @param SERIE
+     * @param serie
      */
-    public void setSERIE(String SERIE) {
-        this.serie = SERIE;
+    public void setSerie(String serie) {
+        this.serie = serie;
     }
     /**
      * @return Int
@@ -135,5 +141,13 @@ public class Masina {
      */
     public void setCombustibil(String combustibil) {
         this.combustibil = combustibil;
+    }
+
+    public List<Act> getActe() {
+        return acte;
+    }
+
+    public void setActe(List<Act> acte) {
+        this.acte = acte;
     }
 }

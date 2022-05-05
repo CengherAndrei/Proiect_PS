@@ -1,5 +1,6 @@
 package com.example.accessingdatamysql.Controller;
 
+import com.example.accessingdatamysql.Model.EnumProprietari;
 import com.example.accessingdatamysql.Model.Proprietar;
 import com.example.accessingdatamysql.Service.ProprietarService;
 import org.springframework.http.HttpHeaders;
@@ -33,7 +34,7 @@ public class ProprietarController {
     public ResponseEntity<Proprietar> addnewProprietar(@RequestBody Proprietar proprietar){
         Proprietar proprietar1 = proprietarService.addNewProprietar(proprietar);
         HttpHeaders httpHeaders=new HttpHeaders();
-        httpHeaders.add("proprietar", "proprietar"+proprietar1.getIdProprietar().toString());
+        httpHeaders.add("proprietar", "proprietar" + proprietar1.getIdProprietar().toString());
         return new ResponseEntity<>(proprietar1, httpHeaders, HttpStatus.CREATED);
     }
     /**
@@ -41,8 +42,8 @@ public class ProprietarController {
      * @return Proprietar
      */
     @GetMapping({"/{idProprietar}"})
-    public ResponseEntity<Proprietar> getProprietarByID(@PathVariable Integer idProprietar){
-        return new ResponseEntity<>(proprietarService.getProprietarByID(idProprietar), HttpStatus.OK);
+    public ResponseEntity<Proprietar> getProprietarByID(@PathVariable Integer idProprietar, EnumProprietari tip){
+        return new ResponseEntity<>(proprietarService.getProprietarByID(idProprietar,tip), HttpStatus.OK);
     }
     /**
      * @return <List<Proprietar>>

@@ -43,17 +43,17 @@ public class ActServiceImpl implements ActService {
      * @return Act
      */
     public Act getActById(Integer id_act) {
-        return actRepository.findById(id_act).get();
+        if(actRepository.findById(id_act).get()!=null)
+            return actRepository.findById(id_act).get();
+        else
+            return null;
     }
     /**
      * @param id_act
      * @return Iterable<Act>
      */
-    public Iterable<Act> deleteAct(Integer id_act) {
-        // This returns a JSON or XML with the users
-        Act act = actRepository.findById(id_act).orElseThrow();
-        actRepository.delete(act);
-        System.out.println("Deleted");
-        return actRepository.findAll();
+    public void deleteAct(Integer id_act) {
+        actRepository.deleteById(id_act);
+
     }
 }

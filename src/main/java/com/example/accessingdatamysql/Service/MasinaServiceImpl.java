@@ -50,11 +50,7 @@ public class MasinaServiceImpl implements MasinaService {
      * @param serie
      * @return Iterable<Masina>
      */
-    public Iterable<Masina> deleteMasina(String serie) {
-        // This returns a JSON or XML with the users
-        Masina ma = masinaRepository.findById(serie).orElseThrow();
-        masinaRepository.delete(ma);
-        System.out.println("Deleted");
-        return masinaRepository.findAll();
+    public void deleteMasina(String serie) {
+        masinaRepository.deleteById(serie);
     }
 }

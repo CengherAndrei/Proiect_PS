@@ -41,7 +41,7 @@ public class ActController {
      * @return Act
      */
     @GetMapping({"/{id_act}"})
-    public ResponseEntity<Act> getMasinaByserie(@PathVariable Integer id_act){
+    public ResponseEntity<Act> getActByserie(@PathVariable Integer id_act){
         return new ResponseEntity<>(actService.getActById(id_act), HttpStatus.OK);
     }
     /**

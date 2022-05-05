@@ -8,3 +8,6 @@ CrudRepository necesara pentru implementarea operatiilor pe baza de date. Pachet
 din Model respectiv implementarea acestor interfete. Acestea implementeaza logica aplicatiei continand metodele responsabile de operatiile 
 asupra bazei de date. In pachetul controller am adaugat de asemenea 3 clase (cate un controller pentru fiecare model) care, dupa cum le 
 spune numele, sunt responsabile de controlul aplicatiei si de apelarea metodelor din service.
+
+#
+Pentru tema 2 am implementat Factory Pattern creand mai multe tipuri de utilizatori : ProprietarBasic, ProprietarPremium si ProprietarAdmin. Singurele modificari asupra codului au fost facute in pachetul Model unde am adaugat cate o clasa pentru fiecare tip de utilizator dar si un Enum. Totodata am creat teste pentru toate entitatile si le-am structurat pe pachete astfel: pachetul de test in care am inserat pachete corespunzatoare fiecarui pachet din proiect (cele 4) iar in fiecare pachet cate o clasa de test corespunzatoare fiecarei clase implementate anterior. Am adaugat totodata si diagrama de clasa si diagrama bazei de date.

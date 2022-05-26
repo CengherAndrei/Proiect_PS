@@ -11,3 +11,6 @@ spune numele, sunt responsabile de controlul aplicatiei si de apelarea metodelor
 
 #
 Pentru tema 2 am implementat Factory Pattern creand mai multe tipuri de utilizatori : ProprietarBasic, ProprietarPremium si ProprietarAdmin. Singurele modificari asupra codului au fost facute in pachetul Model unde am adaugat cate o clasa pentru fiecare tip de utilizator dar si un Enum. Totodata am creat teste pentru toate entitatile si le-am structurat pe pachete astfel: pachetul de test in care am inserat pachete corespunzatoare fiecarui pachet din proiect (cele 4) iar in fiecare pachet cate o clasa de test corespunzatoare fiecarei clase implementate anterior. Am adaugat totodata si diagrama de clasa si diagrama bazei de date.
+
+![BazaDeDate](https://user-images.githubusercontent.com/72455865/170509605-2d1748dc-bc80-4268-9f31-ccb4fb7d34d1.png)
+![Package accessingdatamysql](https://user-images.githubusercontent.com/72455865/170509801-98ab8a3a-10f3-4faa-a54a-cb385a071009.png)
